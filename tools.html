@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XThe's Portfolio</title>
+    <link rel="shortcut icon" href="images/LOGO.png">
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-expand-alt icon' ></i>
+        <div class="logo_name">XThe</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+            <label>
+                <input type="text" placeholder="Search...">
+            </label>
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a href="index.html">
+                <i class='bx bx-user'></i>
+                <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+        </li>
+        <li>
+            <a href="tools.html">
+                <i class='bx bxs-wrench' ></i>
+                <span class="links_name">Languages and Tools</span>
+            </a>
+            <span class="tooltip">Languages and Tools</span>
+        </li>
+        <li>
+            <a href="contact.html">
+                <i class='bx bxs-contact' ></i>
+                <span class="links_name">Contact</span>
+            </a>
+            <span class="tooltip">Contact</span>
+        </li>
+    </ul>
+</div>
+<div class="main">
+    <div class="logo">
+        <img src="images/LOGO.png" alt="logo">
+    </div>
+    <div class="header">
+        <h2>Languages and Tools</h2>
+    </div>
+        <div class="languages">
+            <button onclick="window.location.href='https://python.org'" class="btns"><i class="bx bxl-python"></i></button>
+            <button onclick="window.location.href='https://www.w3.org/html/'" class="btns"><i class="bx bxl-html5"></i></button>
+            <button onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.de.html'" class="btns"><i class="bx bxl-css3"></i></button>
+            <button onclick="window.location.href='https://www.markdownguide.org'" class="btns"><i class="bx bxl-markdown"></i></button>
+        </div><br />
+        <div class="tools">
+            <button onclick="window.location.href='https://git-scm.com'" class="btns"><i class="bx bxl-git"></i></button>
+            <button onclick="window.location.href='https://www.linux.org'" class="btns"><i class="bx bxl-tux"></i></button>
+            <button onclick="window.location.href='https://code.visualstudio.com'" class="btns"><i class='bx bxl-visual-studio' ></i></button>
+        </div>
+</div>
+<script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+    });
+
+    searchBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+    });
+
+    function menuBtnChange() {
+        if(sidebar.classList.contains("open")){
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+        }
+    }
+</script>
+<script src="code.js"></script>
+</body>
+</html>
