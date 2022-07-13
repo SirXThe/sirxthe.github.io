@@ -4,7 +4,8 @@
   box-sizing:border-box;
   font-family:"Poppins" ,sans-serif;
   margin:0;
-  padding:0
+  padding:0;
+  overflow-x: hidden;
 }
 
 .sidebar {
@@ -234,21 +235,23 @@
   align-items:center;
   display:flex;
   justify-content:center;
-  margin:58px auto 0
+  margin:58px auto 0;
+  flex-wrap: wrap;
 }
 
 .tools {
   align-items:center;
   display:flex;
   justify-content:center;
-  margin:32px auto 0
+  margin:32px auto 0;
+  flex-wrap: wrap;
 }
 
 .contact {
   align-items:center;
   display:flex;
   justify-content:center;
-  margin:32px auto 0
+  margin:32px auto 0;
 }
 
 .btns {
@@ -262,11 +265,12 @@
   font-size:64px;
   height:80px;
   justify-content:center;
-  margin-left:15px;
-  margin-right:15px;
+  margin: 10px;
   text-decoration:none;
   transition:background .2s;
-  width:80px
+  width:80px;
+  min-width: 80px;
+  max-width: 100%;
 }
 
 .btns:hover {
