@@ -17,7 +17,8 @@
   top:0;
   transition:all .5s ease;
   width:78px;
-  z-index:99
+  z-index:99;
+  overflow-y: hidden;
 }
 
 .sidebar.open {
