@@ -1,286 +1,286 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap";
 
 * {
-  box-sizing:border-box;
-  font-family:"Poppins" ,sans-serif;
-  margin:0;
-  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins" ,sans-serif;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 .sidebar {
-  background:#181818;
-  height:100%;
-  left:0;
-  padding:6px 14px;
-  position:fixed;
-  top:0;
-  transition:all .5s ease;
-  width:78px;
-  z-index:99;
+  background: #181818;
+  height: 100%;
+  left: 0;
+  padding: 6px 14px;
+  position: fixed;
+  top: 0;
+  transition: all .5s ease;
+  width: 78px;
+  z-index: 99;
   overflow-y: hidden;
 }
 
 .sidebar.open {
-  width:250px
+  width: 250px;
 }
 
 .sidebar .logo-details {
-  align-items:center;
-  display:flex;
-  height:60px;
-  position:relative
+  align-items: center;
+  display: flex;
+  height: 60px;
+  position: relative;
 }
 
 .sidebar .logo-details .icon {
-  opacity:0;
-  transition:all .5s ease
+  opacity: 0;
+  transition: all .5s ease;
 }
 
 .sidebar .logo-details .logo_name {
-  color:#fff;
-  font-size:20px;
-  font-weight:600;
-  opacity:0;
-  transition:all .5s ease
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all .5s ease;
 }
 
 .sidebar.open .logo-details .icon,.sidebar.open .logo-details .logo_name {
-  opacity:1
+  opacity: 1;
 }
 
 .sidebar .logo-details #btn {
-  cursor:pointer;
-  font-size:22px;
-  position:absolute;
-  right:0;
-  text-align:center;
-  top:50%;
-  transform:translateY(-50%);
-  transition:all .4s ease;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .4s ease;
 }
 
 .sidebar.open .logo-details #btn {
-  text-align:right
+  text-align: right;
 }
 
 .sidebar i {
-  color:#fff;
-  font-size:28px;
-  height:60px;
-  line-height:60px;
-  min-width:50px;
-  text-align:center
+  color: #fff;
+  font-size: 28px;
+  height: 60px;
+  line-height: 60px;
+  min-width: 50px;
+  text-align: center;
 }
 
 .sidebar .nav-list {
-  height:100%;
-  margin-top:20px
+  height: 100%;
+  margin-top: 20px;
 }
 
 .sidebar li {
-  list-style:none;
-  margin:8px 0;
-  position:relative
+  list-style: none;
+  margin: 8px 0;
+  position: relative;
 }
 
 .sidebar li .tooltip {
-  background:#fff;
-  border-radius:4px;
-  box-shadow:0 5px 10px rgba(0,0,0,0.3);
-  font-size:15px;
-  font-weight:400;
-  left:calc(100% + 15px);
-  opacity:0;
-  padding:6px 12px;
-  pointer-events:none;
-  position:absolute;
-  top:-20px;
-  transition:0s;
-  white-space:nowrap;
-  z-index:3
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  font-size: 15px;
+  font-weight: 400;
+  left: calc(100% + 15px);
+  opacity: 0;
+  padding: 6px 12px;
+  pointer-events: none;
+  position: absolute;
+  top: -20px;
+  transition: 0s;
+  white-space: nowrap;
+  z-index: 3;
 }
 
 .sidebar li:hover .tooltip {
-  opacity:1;
-  pointer-events:auto;
-  top:50%;
-  transform:translateY(-50%);
-  transition:all .4s ease
+  opacity: 1;
+  pointer-events: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .4s ease;
 }
 
 .sidebar.open li .tooltip {
-  display:none
+  display: none;
 }
 
 .sidebar input {
-  background:#000;
-  border:none;
-  border-radius:12px;
-  color:#FFF;
-  font-size:15px;
-  font-weight:400;
-  height:50px;
-  outline:none;
-  transition:all .5s ease;
-  width:50px
+  background: #000;
+  border: none;
+  border-radius: 12px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  outline: none;
+  transition: all .5s ease;
+  width: 50px;
 }
 
 .sidebar.open input {
-  padding:0 20px 0 50px;
-  width:100%
+  padding: 0 20px 0 50px;
+  width: 100%;
 }
 
 .sidebar .bx-search {
-  background:#000;
-  color:#FFF;
-  font-size:22px;
-  left:0;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%)
+  background: #000;
+  color: #FFF;
+  font-size: 22px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .sidebar.open .bx-search:hover {
-  background:#000;
-  color:#FFF
+  background: #000;
+  color: #FFF;
 }
 
 .sidebar .bx-search:hover {
-  background:#FFF;
-  color:#11101d
+  background: #FFF;
+  color: #11101d;
 }
 
 .sidebar li a {
-  align-items:center;
-  background:#181818;
-  border-radius:12px;
-  display:flex;
-  height:100%;
-  text-decoration:none;
-  transition:all .4s ease;
-  width:100%
+  align-items: center;
+  background: #181818;
+  border-radius: 12px;
+  display: flex;
+  height: 100%;
+  text-decoration: none;
+  transition: all .4s ease;
+  width: 100%;
 }
 
 .sidebar li a:hover {
-  background:#FFF
+  background: #FFF;
 }
 
 .sidebar li a .links_name {
-  color:#fff;
-  font-size:15px;
-  font-weight:400;
-  opacity:0;
-  pointer-events:none;
-  transition:.4s;
-  white-space:nowrap
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s;
+  white-space: nowrap;
 }
 
 .sidebar.open li a .links_name {
-  opacity:1;
-  pointer-events:auto
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sidebar li a:hover .links_name,.sidebar li a:hover i {
-  color:#000;
-  transition:all .5s ease
+  color: #000;
+  transition: all .5s ease;
 }
 
 .sidebar li i {
-  border-radius:12px;
-  font-size:18px;
-  height:50px;
-  line-height:50px
+  border-radius: 12px;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .main {
-  background-color:#000;
-  left:78px;
-  min-height:100vh;
-  position:relative;
-  text-align:center;
-  top:0;
-  transition:all .5s ease;
-  width:calc(100% - 78px);
-  z-index:2
+  background-color: #000;
+  left: 78px;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  top: 0;
+  transition: all .5s ease;
+  width: calc(100% - 78px);
+  z-index: 2;
 }
 
 .sidebar.open ~ .main {
-  left:250px;
-  width:calc(100% - 250px)
+  left: 250px;
+  width: calc(100% - 250px);
 }
 
 .main .header {
-  color:#FFF;
-  font-size:32px;
-  font-weight:700;
-  padding-top:50px
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 50px;
 }
 
 .main .about-me {
-  color:#FFF;
-  font-size:24px;
-  margin:50px auto 0
+  color: #FFF;
+  font-size: 24px;
+  margin: 50px auto 0;
 }
 
 .main .logo img {
-  height:171px;
-  margin:86px auto 0
+  height: 171px;
+  margin: 86px auto 0;
 }
 
 .main .txt-rotate {
-  color:#fff
+  color: #fff;
 }
 
 .languages {
-  align-items:center;
-  display:flex;
-  justify-content:center;
-  margin:58px auto 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 58px auto 0;
   flex-wrap: wrap;
 }
 
 .tools {
-  align-items:center;
-  display:flex;
-  justify-content:center;
-  margin:32px auto 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 32px auto 0;
   flex-wrap: wrap;
 }
 
 .contact {
-  align-items:center;
-  display:flex;
-  justify-content:center;
-  margin:32px auto 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 32px auto 0;
 }
 
 .btns {
-  align-items:center;
-  background:#881414;
-  border:none;
-  border-radius:50%;
-  color:#FFF;
-  cursor:pointer;
-  display:flex;
-  font-size:64px;
-  height:80px;
-  justify-content:center;
+  align-items: center;
+  background: #881414;
+  border: none;
+  border-radius: 50%;
+  color: #FFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 64px;
+  height: 80px;
+  justify-content: center;
   margin: 10px;
-  text-decoration:none;
-  transition:background .2s;
-  width:80px;
+  text-decoration: none;
+  transition: background .2s;
+  width: 80px;
   min-width: 80px;
   max-width: 100%;
 }
 
 .btns:hover {
-  background:#660909;
-  opacity:1
+  background: #660909;
+  opacity: 1;
 }
 
 @media (max-width: 420px) {
   .sidebar li .tooltip {
-    display:none
+    display: none;
   }
 }

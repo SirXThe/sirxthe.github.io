@@ -1,86 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
     <title>XThe's Portfolio</title>
-    <link rel="shortcut icon" href="images/LOGO.png">
-</head>
+    <link rel="shortcut icon" href="images/LOGO.png"> </head>
+
 <body>
 <div class="sidebar">
-    <div class="logo-details">
-        <i class='bx bx-expand-alt icon' ></i>
-        <div class="logo_name">XThe</div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
+    <div class="logo-details"> <i class='bx bx-expand-alt icon'></i>
+        <div class="logo_name">XThe</div> <i class='bx bx-menu' id="btn"></i> </div>
     <ul class="nav-list">
-        <li>
-            <i class='bx bx-search' ></i>
+        <li> <i class='bx bx-search'></i>
             <label>
-                <input type="text" placeholder="Search...">
-            </label>
-            <span class="tooltip">Search</span>
-        </li>
+                <input type="text" placeholder="Search..."> </label> <span class="tooltip">Search</span> </li>
         <li>
-            <a href="./">
-                <i class='bx bx-user'></i>
-                <span class="links_name">About</span>
-            </a>
-            <span class="tooltip">About</span>
-        </li>
+            <a href="./"> <i class='bx bx-user'></i> <span class="links_name">About</span> </a> <span class="tooltip">About</span> </li>
         <li>
-            <a href="./tools">
-                <i class='bx bxs-wrench' ></i>
-                <span class="links_name">Languages and Tools</span>
-            </a>
-            <span class="tooltip">Languages and Tools</span>
-        </li>
+            <a href="./tools"> <i class='bx bxs-wrench'></i> <span class="links_name">Languages and Tools</span> </a> <span class="tooltip">Languages and Tools</span> </li>
         <li>
-            <a href="./contact">
-                <i class='bx bxs-contact' ></i>
-                <span class="links_name">Contact</span>
-            </a>
-            <span class="tooltip">Contact</span>
-        </li>
+            <a href="./contact"> <i class='bx bxs-contact'></i> <span class="links_name">Contact</span> </a> <span class="tooltip">Contact</span> </li>
     </ul>
 </div>
 <div class="main">
-    <div class="logo">
-        <img src="images/LOGO.png" alt="logo">
-    </div>
+    <div class="logo"> <img src="images/LOGO.png" alt="logo"> </div>
     <div class="header">
-        <h2>Contact</h2>
-    </div>
+        <h2>Contact</h2> </div>
     <div class="contact">
         <button onclick="window.open('https://github.com/SirXThe')" class="btns"><i class="bx bxl-github"></i></button>
         <button onclick="window.open('https://discord.gg/udTcwmMnqS')" class="btns"><i class="bx bxl-discord"></i></button>
     </div>
 </div>
-<script>
-    let sidebar = document.querySelector(".sidebar");
-    let closeBtn = document.querySelector("#btn");
-    let searchBtn = document.querySelector(".bx-search");
-
-    closeBtn.addEventListener("click", ()=>{
-        sidebar.classList.toggle("open");
-        menuBtnChange();
-    });
-
-    searchBtn.addEventListener("click", ()=>{
-        sidebar.classList.toggle("open");
-        menuBtnChange();
-    });
-
-    function menuBtnChange() {
-        if(sidebar.classList.contains("open")){
-            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-        } else {
-            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-        }
-    }
-</script>
-<script src="code.js"></script>
+<script src="script.js"></script>
 </body>
+
 </html>
