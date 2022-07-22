@@ -210,22 +210,21 @@
   width: calc(100% - 250px);
 }
 
+.main .logo img {
+  height: 171px;
+  margin-top: 10vw;
+}
+
 .main .header {
   color: #FFF;
   font-size: 32px;
   font-weight: 700;
-  padding-top: 50px;
 }
 
 .main .about-me {
   color: #FFF;
   font-size: 24px;
-  margin: 50px auto 0;
-}
-
-.main .logo img {
-  height: 171px;
-  margin: 86px auto 0;
+  margin-top: 2vw;
 }
 
 .main .txt-rotate {
